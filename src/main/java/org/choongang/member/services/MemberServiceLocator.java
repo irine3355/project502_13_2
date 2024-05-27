@@ -5,7 +5,7 @@ import org.choongang.global.Service;
 import org.choongang.global.ServiceLocator;
 import org.choongang.global.constants.Menu;
 
-public class MemberServiceLocator implements AbstractServiceLocator {
+public class MemberServiceLocator extends AbstractServiceLocator {
 
 public static ServiceLocator getInstance(){
     if(instance == null){
