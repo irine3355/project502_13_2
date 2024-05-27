@@ -7,7 +7,7 @@ import org.choongang.global.constants.Menu;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MemberControllerLocator implements ControllerLocator{
+public class MemberControllerLocator implements ControllerLocator {
 
     private static ControllerLocator instance;
 
@@ -42,5 +42,4 @@ public class MemberControllerLocator implements ControllerLocator{
 
         return controller;
     }
-
 }

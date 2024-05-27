@@ -8,5 +8,4 @@ import lombok.Data;
 public class RequestLogin {
     private String userId;
     private String userPw;
-
 }

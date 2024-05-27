@@ -13,20 +13,18 @@ public class DBConn {
 
     static {
         try {
-
-
-            Reader reader = Resources.getResourceAsReader
-                    ("org/choongang/global/configs/mybatis-config.xml");
+            Reader reader = Resources.getResourceAsReader("org/choonang/global/configs/mybatis-config.xml");
             factory = new SqlSessionFactoryBuilder().build(reader);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-    public static SqlSession getSession (boolean autoCommit)
-    {
+
+    public static SqlSession getSession(boolean autoCommit) {
         return factory.openSession(autoCommit);
     }
-    public static SqlSession getSession(){
-          return getSession  (true);
-}}
 
+    public static SqlSession getSession() {
+        return getSession(true);
+    }
+}
